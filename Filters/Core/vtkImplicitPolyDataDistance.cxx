@@ -182,7 +182,6 @@ double vtkImplicitPolyDataDistance::SharedEvaluate(double x[3], double g[3], dou
       }
 
     double dist2, weights[3], pcoords[3], awnorm[3] = {0, 0, 0};
-    double closestPoint[3];
     cell->EvaluatePosition(cp, p, subId, pcoords, dist2, weights);
 
     vtkIdList* idList = vtkIdList::New();
